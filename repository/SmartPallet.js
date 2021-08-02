@@ -7,6 +7,7 @@ const db = {};
 db.Sequelize = Sequelize;
 db.SmartPallet = SmartPallet;
 
+db.User = require("./models/user.model")(SmartPallet, Sequelize);
 db.Item = require("./models/item.model")(SmartPallet, Sequelize);
 db.Location = require("./models/location.model")(SmartPallet, Sequelize);
 db.Label = require("./models/label.model")(SmartPallet, Sequelize);
